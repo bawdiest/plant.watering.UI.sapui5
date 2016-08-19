@@ -1,0 +1,23 @@
+<mvc:View
+   controllerName="sap.ui.demo.wt.controller.InputPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+               <Panel 
+                headerText="{i18n>inputPanelTitle}"
+                class="sapUiResponsiveMargin"
+                width="auto"
+                >
+                  <content>
+                    <Input
+                        value="{/input/result}"
+                        description="Result is: {/input/result}"
+                        valueLiveUpdate="true"
+                        width="60%"
+                        class="sapUiSmallMarginEnd" />
+                    <Button
+                        text="{i18n>showPredictButtonText}"
+                        press="onPredict"
+                        class="sapUiSmallMarginEnd" />
+                   </content>
+               </Panel>
+</mvc:View>
