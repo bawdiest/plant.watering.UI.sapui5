@@ -1,8 +1,10 @@
 <mvc:View
   xmlns:l="sap.ui.layout"
+  xmlns:core="sap.ui.core"
   xmlns:html="http://www.w3.org/1999/xhtml"
   controllerName="sap.ui.demo.wt.controller.InputPanel"
   xmlns="sap.m"
+  xmlns:wt="sap.ui.demo.wt.control"
   xmlns:mvc="sap.ui.core.mvc">
   <l:VerticalLayout
     width="100%" >
@@ -28,22 +30,8 @@
           >
         </Button>
       </FlexBox>
-      <FlexBox alignItems="Start">
-        <Slider
-          tooltip = "Temperature"
-          width = "100%"
-          min = "10"
-          max = "30"
-          value = "25"
-          smallStepWidth = "0.5"
-          class="sapUiSmallMarginEnd">
-          <layoutData>
-            <FlexItemData growFactor="12" />
-          </layoutData>
-        </Slider>
-      </FlexBox>
-
-
+      <wt:Slider class="sapUiSmallMarginBeginEnd"
+        value = "{/input/result}"/>
     </Panel>
   </l:content>
 </l:VerticalLayout>

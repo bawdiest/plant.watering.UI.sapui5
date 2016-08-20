@@ -14,7 +14,7 @@ sap.ui.define([
          // set data model
          var oData = {
             input : {
-               result : "World"
+               result : 25
             }
          };
          var oModel = new JSONModel(oData);

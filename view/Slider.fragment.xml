@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <Slider
+    tooltip = "Temperature"
+    width = "100%"
+    min = "10"
+    max = "30"
+    value = "{/input/result}"
+    smallStepWidth = "0.5"
+    class="sapUiSmallMarginEnd">
+  </Slider>
+</core:FragmentDefinition>
