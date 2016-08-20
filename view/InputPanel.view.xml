@@ -49,7 +49,7 @@
           value = "{wd>/weather/rain}"
           desc = "{i18n>inputRain} {wd>/weather/rain}"
           min = "0"
-          max = "30"/>
+          max = "15"/>
           <wt:Slider class="sapUiLargeTinyBottom"
           value = "{wd>/weather/humidity}"
           desc = "{i18n>inputHumidity} {wd>/weather/humidity}"

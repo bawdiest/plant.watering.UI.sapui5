@@ -23,7 +23,7 @@ sap.ui.define([
 				events : {
 					change : {
 						parameters : {
-							value : {type : "int"}
+							value : {type : "float"}
 						}
 					}
 				}
@@ -49,10 +49,11 @@ sap.ui.define([
 			onBeforeRendering: function() {
 				this.setProperty("min", this.getMin(), true);
 				this.getAggregation("_slider").setMin(this.getMin());
-				this.setProperty("value", this.getValue(), true);
-				this.getAggregation("_slider").setValue(this.getValue());
 				this.setProperty("max", this.getMax(), true);
 				this.getAggregation("_slider").setMax(this.getMax());
+				this.setProperty("value", this.getValue(), true);
+				this.getAggregation("_slider").setValue(this.getValue());
+
 				this.setProperty("desc", this.getDesc(), true);
 				this.getAggregation("_label").setText(this.getDesc());
 			},
