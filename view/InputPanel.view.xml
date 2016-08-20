@@ -1,23 +1,50 @@
 <mvc:View
-   controllerName="sap.ui.demo.wt.controller.InputPanel"
-   xmlns="sap.m"
-   xmlns:mvc="sap.ui.core.mvc">
-               <Panel 
-                headerText="{i18n>inputPanelTitle}"
-                class="sapUiResponsiveMargin"
-                width="auto"
-                >
-                  <content>
-                    <Input
-                        value="{/input/result}"
-                        description="Result is: {/input/result}"
-                        valueLiveUpdate="true"
-                        width="60%"
-                        class="sapUiSmallMarginEnd" />
-                    <Button
-                        text="{i18n>showPredictButtonText}"
-                        press="onPredict"
-                        class="sapUiSmallMarginEnd" />
-                   </content>
-               </Panel>
+  xmlns:l="sap.ui.layout"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  controllerName="sap.ui.demo.wt.controller.InputPanel"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <l:VerticalLayout
+    width="100%" >
+    <l:content>
+     <Panel 
+      headerText="{i18n>inputPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      >
+      <FlexBox alignItems="Start">
+        <Input
+          value="{/input/result}"
+          description="Result is: {/input/result}"
+          valueLiveUpdate="true"
+          width="100%"
+          class="sapUiSmallMarginEnd" >
+        </Input>
+        <Button
+          text="{i18n>showPredictButtonText}"
+          press="onPredict"
+          class="sapUiLargeMarginEnd"
+          width="100%"
+          >
+        </Button>
+      </FlexBox>
+      <FlexBox alignItems="Start">
+        <Slider
+          tooltip = "Temperature"
+          width = "100%"
+          min = "10"
+          max = "30"
+          value = "25"
+          smallStepWidth = "0.5"
+          class="sapUiSmallMarginEnd">
+          <layoutData>
+            <FlexItemData growFactor="12" />
+          </layoutData>
+        </Slider>
+      </FlexBox>
+
+
+    </Panel>
+  </l:content>
+</l:VerticalLayout>
 </mvc:View>
