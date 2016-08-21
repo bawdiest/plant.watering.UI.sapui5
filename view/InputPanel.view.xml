@@ -31,8 +31,8 @@
         </Button>
       </FlexBox> -->
       <wt:Slider class="sapUiLargeTinyBottom"
-        value = "{wd>/weather/temperature}"
-        desc = "{i18n>inputTemperature} {wd>/weather/temperature}"
+        value = "{test>/foo}"
+        desc = "{i18n>inputTemperature} {test>/foo}"
         min = "10"
         max = "35" />
         <wt:Slider class="sapUiLargeTinyBottom"

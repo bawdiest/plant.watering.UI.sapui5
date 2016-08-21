@@ -51,16 +51,16 @@ sap.ui.define([
 				this.getAggregation("_slider").setMin(this.getMin());
 				this.setProperty("max", this.getMax(), true);
 				this.getAggregation("_slider").setMax(this.getMax());
-				this.setProperty("value", this.getValue(), true);
-				this.getAggregation("_slider").setValue(this.getValue());
+				this.setProperty("value", parseInt(this.getValue()), true);
+				this.getAggregation("_slider").setValue(parseInt(this.getValue()));
 
 				this.setProperty("desc", this.getDesc(), true);
 				this.getAggregation("_label").setText(this.getDesc());
 			},
 
 			setValue: function (iValue) {
-				this.setProperty("value", iValue, true);
-				this.getAggregation("_slider").setValue(iValue);
+				this.setProperty("value", parseInt(iValue), true);
+				this.getAggregation("_slider").setValue(parseInt(iValue));
 
 
 			},

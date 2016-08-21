@@ -32,6 +32,13 @@ sap.ui.define([
          var weatherModel = new JSONModel(weatherData);
          this.setModel(weatherModel, "wd");
 
+
+         var url = "http://mikmak.cc:1880/weatherData?foo=21";
+         var testModel = new JSONModel();
+         testModel.loadData(url, "", false, "GET"); //false: wait until data is loaded
+         this.setModel(testModel, "test");
+
+
          // set i18n model
          var i18nModel = new ResourceModel({
             bundleName : "sap.ui.demo.wt.i18n.i18n"
