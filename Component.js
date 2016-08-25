@@ -15,6 +15,11 @@ sap.ui.define([
          var oData = {
             input : {
                temperature : 25
+            },
+            result : {
+               message : "",
+               time : 0,
+               quantitiy : 0
             }
          };
          var oModel = new JSONModel(oData);
@@ -33,9 +38,11 @@ sap.ui.define([
          this.setModel(weatherModel, "wd");
 
 
-         var url = "http://mikmak.cc:1880/weatherData?foo=21";
+         var url = "https://cors-anywhere.herokuapp.com/http://mikmak.cc:1880/weatherData?foo=21"; //https://cors-anywhere.herokuapp.com/
+         var parameters = {};
+         var headers ={};
          var testModel = new JSONModel();
-         testModel.loadData(url, "", false, "GET"); //false: wait until data is loaded
+         testModel.loadData(url, parameters, true, "GET", false, false, headers); //false: wait until data is loaded
          this.setModel(testModel, "test");
 
 

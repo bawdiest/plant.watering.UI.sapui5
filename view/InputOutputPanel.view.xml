@@ -1,0 +1,73 @@
+<mvc:View
+  xmlns:l="sap.ui.layout"
+  xmlns:core="sap.ui.core"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  controllerName="sap.ui.demo.wt.controller.InputOutputPanel"
+  xmlns="sap.m"
+  xmlns:wt="sap.ui.demo.wt.control"
+  xmlns:mvc="sap.ui.core.mvc">
+  <l:Grid defaultSpan="L3 M4 S6" class="sapUiSmallMarginTop">
+    <l:content>
+     <Panel 
+      headerText="{i18n>inputPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      >
+      <wt:Slider class="sapUiLargeTinyBottom"
+        value = "{test>/foo}"
+        desc = "{i18n>inputTemperature} {test>/foo}"
+        min = "10"
+        max = "35" />
+        <wt:Slider class="sapUiLargeTinyBottom"
+          value = "{wd>/weather/pressure}"
+          desc = "{i18n>inputPressure} {wd>/weather/pressure}"
+          min = "900"
+          max = "1050"/>
+          <wt:Slider class="sapUiLargeTinyBottom"
+            value = "{wd>/weather/wind}"
+            desc = "{i18n>inputWind} {wd>/weather/wind}"
+            min = "0"
+            max = "30"/>
+            <wt:Slider class="sapUiLargeTinyBottom"
+              value = "{wd>/weather/rain}"
+              desc = "{i18n>inputRain} {wd>/weather/rain}"
+              min = "0"
+              max = "15"/>
+              <wt:Slider class="sapUiLargeTinyBottom"
+                value = "{wd>/weather/humidity}"
+                desc = "{i18n>inputHumidity} {wd>/weather/humidity}"
+                min = "0"
+                max = "100"/>
+                        <Button
+          text="{i18n>showPredictButtonText}"
+          press="onPredict"
+          class="sapUiLargeMarginEnd"
+          width="auto"
+          >
+        </Button>
+                <layoutData>
+                  <l:GridData span="L4 M4 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
+                </layoutData>
+              </Panel>
+
+
+              <Panel
+                id="Result"
+                headerText="{i18n>ResultPanelTitle}"
+                busyIndicatorDelay="0"
+                class="sapUiResponsiveMargin"
+                width="auto"
+                >
+                <ToolbarSpacer />
+                <content>
+                  <Text text="{/result/message}" />
+                </content>
+
+                <layoutData>
+                  <l:GridData span="L8 M8 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
+                </layoutData>
+              </Panel>
+            </l:content>
+          </l:Grid>
+
+        </mvc:View>

@@ -11,41 +11,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 929,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Component.js",
-			"settings":
-			{
-				"buffer_size": 853,
-				"line_ending": "Unix",
-				"name": "sap.ui.define(["
-			}
-		},
-		{
-			"file": "i18n/i18n.properties",
-			"settings":
-			{
-				"buffer_size": 226,
-				"line_ending": "Unix",
-				"name": "showHelloButtonText=Result"
-			}
-		},
-		{
-			"file": "manifest.json",
-			"settings":
-			{
-				"buffer_size": 763,
-				"line_ending": "Unix",
-				"name": "{"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -79,13 +44,15 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5",
-		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/controller",
-		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/i18n",
-		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/view"
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5"
 	],
 	"file_history":
 	[
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/index.html",
+		"/Volumes/web/plant.watering.Fiori.sapui5/Component.js",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/Component.js",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/i18n/i18n.properties",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/manifest.json",
 		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/controller/App.controller.js",
 		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/view/App.view.xml",
 		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/view/InputPanel.view.xml",
@@ -97,7 +64,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -128,135 +95,14 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 929,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								858,
-								858
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Component.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								307,
-								307
-							]
-						],
-						"settings":
-						{
-							"auto_name": "sap.ui.define([",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "i18n/i18n.properties",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								209,
-								194
-							]
-						],
-						"settings":
-						{
-							"auto_name": "showHelloButtonText=Result",
-							"syntax": "Packages/Java/JavaProperties.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "manifest.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 763,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								444,
-								444
-							]
-						],
-						"settings":
-						{
-							"auto_name": "{",
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -293,7 +139,7 @@
 	"project": "plant.watering.ui5.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
