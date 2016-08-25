@@ -38,15 +38,15 @@
                 desc = "{i18n>inputHumidity} {wd>/weather/humidity}"
                 min = "0"
                 max = "100"/>
-                        <Button
-          text="{i18n>showPredictButtonText}"
-          press="onPredict"
-          class="sapUiLargeMarginEnd"
-          width="auto"
-          >
-        </Button>
+                <Button
+                  text="{i18n>showPredictButtonText}"
+                  press="onPredict"
+                  class="sapUiLargeMarginEnd"
+                  width="auto"
+                  >
+                </Button>
                 <layoutData>
-                  <l:GridData span="L4 M4 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
+                  <l:GridData span="L7 M12 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
                 </layoutData>
               </Panel>
 
@@ -58,16 +58,41 @@
                 class="sapUiResponsiveMargin"
                 width="auto"
                 >
-                <ToolbarSpacer />
                 <content>
-                  <Text text="{/result/message}" />
-                </content>
+                  
+                  <FlexBox
+                    height="auto"
+                    alignItems="Start"
+                    justifyContent="Center">
+                    <items>
 
-                <layoutData>
-                  <l:GridData span="L8 M8 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
-                </layoutData>
-              </Panel>
-            </l:content>
-          </l:Grid>
+                      <Image
+                        class="sapUiLargeMarginTop sapUiLargeMarginBottom"
+                        src="img/plant.jpg"
+                        densityAware="false"
+                        width="auto" >
+<!--                     <layoutData>
+                      <FlexItemData growFactor="1" />
+                    </layoutData> -->
+                  </Image>
+                </items>
+              </FlexBox>
+              <FlexBox
+                height="auto"
+                alignItems="Start"
+                justifyContent="Center">
+                <items>
+                  <FormattedText
+                   htmlText="{/result/message}" />
+                 </items>
+               </FlexBox>
+             </content>
 
-        </mvc:View>
+             <layoutData>
+              <l:GridData span="L5 M12 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
+            </layoutData>
+          </Panel>
+        </l:content>
+      </l:Grid>
+
+    </mvc:View>
