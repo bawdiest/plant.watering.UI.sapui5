@@ -38,12 +38,28 @@ sap.ui.define([
          this.setModel(weatherModel, "wd");
 
 
-         var url = "https://cors-anywhere.herokuapp.com/http://mikmak.cc:1880/weatherData?foo=21"; //https://cors-anywhere.herokuapp.com/
+         var url = "https://cors-anywhere.herokuapp.com/http://mikmak.cc:1880/weatherData?temperature=21";
+         url += "&pressure=966";
+         url += "&wind=1";
+         url += "&rain=0";
+         url += "&humidity=85";
          var parameters = {};
          var headers ={};
          var testModel = new JSONModel();
-         testModel.loadData(url, parameters, true, "GET", false, false, headers); //false: wait until data is loaded
-         this.setModel(testModel, "test");
+         testModel.loadData(url, parameters, false, "GET", false, false, headers); //false: wait until data is loaded
+         this.setModel(testModel, "currentWeather");
+
+         // var url = "https://cors-anywhere.herokuapp.com/http://mikmak.cc:1880/weatherData?foo=21"; //https://cors-anywhere.herokuapp.com/
+         // var parameters = {};
+         // var headers ={};
+         // var testModel = new JSONModel();
+         // testModel.loadData(url, parameters, true, "GET", false, false, headers); //false: wait until data is loaded
+         // this.setModel(testModel, "currentWeather";
+
+         var oModel = new sap.ui.model.json.JSONModel();
+         oModel.loadData("data/predictiveModel.json");
+
+         this.setModel(oModel, "model");
 
 
          // set i18n model
