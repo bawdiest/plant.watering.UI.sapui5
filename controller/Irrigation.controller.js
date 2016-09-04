@@ -15,7 +15,6 @@ sap.ui.define([
 			onAfterRendering : function () {
 
 				var that = this;
-				//that.irrigate();
 			},
 
 			onStart : function () {
@@ -33,13 +32,12 @@ sap.ui.define([
 					contentType : "application/json",
 					dataType : 'jsonp',
 					success: function (result) {
-						alert("OK")
 					},
 					error: function (e) {  
-						alert("Not OK")
 						console.log(e.message);  
 					}  
 				});
+
 				that.irrigate();
 			},
 
@@ -74,7 +72,9 @@ sap.ui.define([
 				var irrigationTime = that.getView().getModel("irrigationProcess").getProperty("/data/irrigationTime");
 				var irrigationPerc = that.getView().getModel("irrigationProcess").getProperty("/data/irrigationPerc");
 				var pumpStoped = that.getView().getModel("irrigationProcess").getProperty("/data/pumpStoped");
-
+				console.log(predictedTime); 
+				console.log(irrigationTime); 
+				console.log(pumpStoped); 
 				if(irrigationTime <= predictedTime & pumpStoped != 1) {
 					setTimeout(function()
 					{

@@ -63,8 +63,8 @@ sap.ui.define([
                   var dMsg = oBundle.getText("doneMsg");
                   resultPanel.setBusy(false);
 
-                  that.getView().getModel().setProperty("/result/Time", sTime);
-                  that.getView().getModel().setProperty("/result/Quantity", sQuantity);
+                  that.getView().getModel().setProperty("/result/time", sTime);
+                  that.getView().getModel().setProperty("/result/quantity", sQuantity);
 
                   var sMsg = oBundle.getText("resultMsg", [sQuantity]);
                   that.getView().getModel().setProperty("/result/message", sMsg);
