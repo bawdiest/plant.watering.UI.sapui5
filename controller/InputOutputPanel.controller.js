@@ -7,13 +7,25 @@ sap.ui.define([
          onAfterRendering : function () {
             var that = this;
             that.predict();
-            //jQuery.sap.delayedCall(0, that, function() {
-            //   that.predict()
-            //})
          },
          onPredict : function () {
             this.predict()
          },
+
+         onDisplayNotFound : function (oEvent) {
+
+            this.getOwnerComponent().getRouter().getTargets().display("notFound", {
+               fromTarget : "home"
+            });
+         },
+
+         onStartIrrigation : function (oEvent) {
+
+            this.getOwnerComponent().getRouter().getTargets().display("irrigation", {
+               fromTarget : "home"
+            });
+         },
+
          predict : function () {
             var that = this;
             var oBundle = that.getView().getModel("i18n").getResourceBundle();
@@ -40,15 +52,25 @@ sap.ui.define([
             $
             .ajax({
                url : url,
+               async: true,
                jsonpCallback: 'processJSON', 
                contentType : "application/json",
                dataType : 'jsonp',
                success: function (result) {  
                   sResult = result.amount;
-                  var sMsg = oBundle.getText("resultMsg", [sResult]);
+                  
                   var dMsg = oBundle.getText("doneMsg");
-                  resultPanel.setBusy(false)
+                  resultPanel.setBusy(false);
+
+                  that.getView().getModel().setProperty("/result/time", sResult);
+                  that.getView().getModel().setProperty("/result/quantity", sResult);
+
+                  var sMsg = oBundle.getText("resultMsg", [sResult]);
                   that.getView().getModel().setProperty("/result/message", sMsg);
+
+                  var sLinkText = oBundle.getText("showStartIrrigationLinkText", [sResult]);
+                  that.getView().getModel().setProperty("/result/startIrrigationLinkText", sLinkText);
+
                   MessageToast.show(dMsg);
                },
                error: function (e) {  

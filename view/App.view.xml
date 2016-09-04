@@ -4,13 +4,13 @@
   xmlns:l="sap.ui.layout"
   xmlns:mvc="sap.ui.core.mvc"
   displayBlock="true">
-  <App>
-    <pages>
+  <App id="app">
+<!--     <pages>
      <Page title="{i18n>homePageTitle}">
       <content>
         <mvc:XMLView viewName="sap.ui.demo.wt.view.InputOutputPanel" />
       </content>
     </Page>
-  </pages>
+  </pages> -->
 </App>
 </mvc:View>

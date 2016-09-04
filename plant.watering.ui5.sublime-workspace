@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ir",
+				"irrigationPerc"
+			],
+			[
+				"pre",
+				"predictedTime"
+			],
+			[
 				"Re",
 				"ResourceModel"
 			]
@@ -44,15 +52,21 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5"
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.UI.sapui5"
 	],
 	"file_history":
 	[
-		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/index.html",
-		"/Volumes/web/plant.watering.Fiori.sapui5/Component.js",
-		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/Component.js",
-		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/i18n/i18n.properties",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/view/InputOutputPanel.view.xml",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/controller/InputOutputPanel.controller.js",
 		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/manifest.json",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/Component.js",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/index.html",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/view/App.view.xml",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/view/NotFound.view.xml",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/controller/NotFound.controller.js",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/controller/BaseController.js",
+		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/i18n/i18n.properties",
+		"/Volumes/web/plant.watering.Fiori.sapui5/Component.js",
 		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/controller/App.controller.js",
 		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/view/App.view.xml",
 		"/Users/mikmak/Documents/Cloud/private/myProjects/plant.watering/plant.watering.ui5/view/InputPanel.view.xml",

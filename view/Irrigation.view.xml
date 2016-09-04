@@ -1,0 +1,65 @@
+<mvc:View
+	controllerName="sap.ui.demo.wt.controller.Irrigation"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="{i18n>irrigationPagelTitle}"
+		showNavButton="true"
+		navButtonPress="onNavBack">
+
+		<Panel 
+			headerText="{i18n>pumpControlPanelTitle}"
+			class="sapUiResponsiveMargin"
+			width="auto"
+			>
+
+			<FlexBox
+				height="100px"
+				alignItems="Start"
+				justifyContent="Start">
+				<items>
+					<Button
+						text="{/result/startIrrigationLinkText}"
+						press="onStart"
+						class="sapUiLargeMarginEnd"
+						width="auto"
+						>
+					</Button>
+
+					<Button
+						text="{i18n>stopPumpButonText}"
+						press="onStop"
+						class="sapUiLargeMarginEnd"
+						width="auto"
+						>
+					</Button>
+				</items>
+			</FlexBox>
+
+		</Panel>
+
+		<Panel 
+			headerText="{i18n>irrigationPanelTitle}"
+			class="sapUiResponsiveMargin"
+			width="auto"
+			>
+
+			<l:VerticalLayout
+				class="sapUiContentPadding"
+				width="100%">
+				<l:content>
+					<ProgressIndicator
+						class="sapUiSmallMarginBottom"
+						percentValue="{irrigationProcess>/data/irrigationPerc}"
+						displayValue="{irrigationProcess>/data/irrigationTime}"
+						showValue="true"
+						state="Success"
+						width="100%" 
+						/>
+					</l:content>
+				</l:VerticalLayout>
+
+			</Panel>
+		</Page>
+	</mvc:View>

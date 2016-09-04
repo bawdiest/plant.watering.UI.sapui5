@@ -9,16 +9,23 @@ sap.ui.define([
             manifest: "json"
          },
          init : function () {
+
          // call the init function of the parent
          UIComponent.prototype.init.apply(this, arguments);
+
+// create the views based on the url/hash
+this.getRouter().initialize();
+
          // set data model
          var oData = {
             input : {
-               temperature : 25
+               temperature : 25,
+               irrigationTime: 0
             },
             result : {
                message : "",
                time : 0,
+               startIrrigationLinkText: "",
                quantitiy : 0
             }
          };
@@ -67,6 +74,17 @@ sap.ui.define([
             bundleName : "sap.ui.demo.wt.i18n.i18n"
          });
          this.setModel(i18nModel, "i18n");
+
+
+         var oData = {
+            data : {
+               irrigationTime: 0,
+               irrigationPerc: 0,
+               pumpStoped: 0
+            }
+         };
+         var oModel = new JSONModel(oData);
+         this.setModel(oModel, "irrigationProcess");
       }
    });
    });

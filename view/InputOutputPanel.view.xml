@@ -79,13 +79,18 @@
               </FlexBox>
               <FlexBox
                 height="auto"
+                direction="Column"
                 alignItems="Start"
                 justifyContent="Center">
                 <items>
                   <FormattedText
-                   htmlText="{/result/message}" />
+                   htmlText="{/result/message}" width="100%"/>
+                   <Link text="{/result/startIrrigationLinkText}" press="onStartIrrigation" />
+
                  </items>
                </FlexBox>
+               
+
              </content>
 
              <layoutData>
