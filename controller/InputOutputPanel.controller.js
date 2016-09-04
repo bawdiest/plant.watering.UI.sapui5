@@ -57,18 +57,19 @@ sap.ui.define([
                contentType : "application/json",
                dataType : 'jsonp',
                success: function (result) {  
-                  sResult = result.amount;
+                  var sQuantity = result.Quantity;
+                  var sTime = result.Time;
                   
                   var dMsg = oBundle.getText("doneMsg");
                   resultPanel.setBusy(false);
 
-                  that.getView().getModel().setProperty("/result/time", sResult);
-                  that.getView().getModel().setProperty("/result/quantity", sResult);
+                  that.getView().getModel().setProperty("/result/Time", sTime);
+                  that.getView().getModel().setProperty("/result/Quantity", sQuantity);
 
-                  var sMsg = oBundle.getText("resultMsg", [sResult]);
+                  var sMsg = oBundle.getText("resultMsg", [sQuantity]);
                   that.getView().getModel().setProperty("/result/message", sMsg);
 
-                  var sLinkText = oBundle.getText("showStartIrrigationLinkText", [sResult]);
+                  var sLinkText = oBundle.getText("showStartIrrigationLinkText", [sTime]);
                   that.getView().getModel().setProperty("/result/startIrrigationLinkText", sLinkText);
 
                   MessageToast.show(dMsg);

@@ -13,6 +13,8 @@
       class="sapUiResponsiveMargin"
       width="auto"
       >
+      <Text text="{i18n>inputPanelDescr}" class="sapUiLargeMarginBottom" />
+
       <wt:Slider class="sapUiLargeTinyBottom"
         value = "{currentWeather>/temperature}"
         desc = "{i18n>inputTemperature} {currentWeather>/temperature}"
