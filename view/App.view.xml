@@ -3,7 +3,7 @@
   xmlns="sap.m"
   xmlns:l="sap.ui.layout"
   xmlns:mvc="sap.ui.core.mvc"
-  displayBlock="true">
+  displayBlock="false">
   <App id="app">
 </App>
 </mvc:View>
