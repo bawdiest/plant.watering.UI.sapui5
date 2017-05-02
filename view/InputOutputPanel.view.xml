@@ -6,12 +6,6 @@
   xmlns="sap.m"
   xmlns:wt="sap.ui.demo.wt.control"
   xmlns:mvc="sap.ui.core.mvc">
-              <ScrollContainer
-    height="100%"
-    width="100%"
-    horizontal="true"
-    vertical="true"
-    focusable="true">
   <l:Grid defaultSpan="L3 M4 S6" class="sapUiSmallMarginTop">
 
     <l:content>
@@ -111,5 +105,4 @@
         </l:content>
 
       </l:Grid>
-        </ScrollContainer>
     </mvc:View>
