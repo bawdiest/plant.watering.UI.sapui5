@@ -8,6 +8,12 @@
   xmlns:mvc="sap.ui.core.mvc">
   <l:Grid defaultSpan="L3 M4 S6" class="sapUiSmallMarginTop">
     <l:content>
+        <ScrollContainer
+    height="100%"
+    width="100%"
+    horizontal="true"
+    vertical="true"
+    focusable="true">
      <Panel 
       headerText="{i18n>inputPanelTitle}"
       class="sapUiResponsiveMargin"
@@ -99,6 +105,7 @@
               <l:GridData span="L5 M12 S12" linebreakL="false" linebreakM="false" linebreakS="true" />
             </layoutData>
           </Panel>
+          </ScrollContainer>
         </l:content>
       </l:Grid>
 
