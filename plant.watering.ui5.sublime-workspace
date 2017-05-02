@@ -19,6 +19,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Component.js",
+			"settings":
+			{
+				"buffer_size": 2843,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controller/Irrigation.controller.js",
+			"settings":
+			{
+				"buffer_size": 3117,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -27,18 +44,45 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
-		"last_filter": "",
+		"height": 314.0,
+		"last_filter": "form",
 		"selected_items":
 		[
+			[
+				"form",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: code",
+				"Package Control: Install Local Dependency"
+			]
 		],
-		"width": 0.0
+		"width": 571.0
 	},
 	"console":
 	{
 		"height": 181.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
 	},
 	"distraction_free":
@@ -52,10 +96,16 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.UI.sapui5"
+		"/home/mikmak/CloudStation/private/myProjects/AIrigare/plant.watering.UI.sapui5",
+		"/home/mikmak/CloudStation/private/myProjects/AIrigare/plant.watering.UI.sapui5/control",
+		"/home/mikmak/CloudStation/private/myProjects/AIrigare/plant.watering.UI.sapui5/controller",
+		"/home/mikmak/CloudStation/private/myProjects/AIrigare/plant.watering.UI.sapui5/data",
+		"/home/mikmak/CloudStation/private/myProjects/AIrigare/plant.watering.UI.sapui5/view"
 	],
 	"file_history":
 	[
+		"/run/user/1000/gvfs/smb-share:server=mikmak.local,share=web/restifydb/README.md",
+		"/home/mikmak/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
 		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/view/InputOutputPanel.view.xml",
 		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/controller/InputOutputPanel.controller.js",
 		"/Users/mikmak/CloudStation/private/myProjects/plant.watering.Fiori.sapui5/manifest.json",
@@ -109,8 +159,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								899,
+								899
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "controller/Irrigation.controller.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								699,
+								699
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
