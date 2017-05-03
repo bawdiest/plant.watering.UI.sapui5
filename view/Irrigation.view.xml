@@ -20,7 +20,7 @@
 				justifyContent="Start">
 				<items>
 					<Button
-						text="{/result/startIrrigationLinkText}"
+						text="Start"
 						press="onStart"
 						class="sapUiLargeMarginEnd"
 						width="auto"

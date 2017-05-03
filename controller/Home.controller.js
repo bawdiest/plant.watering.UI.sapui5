@@ -30,6 +30,12 @@
                 MessageToast.show("The GenericTile \"" + oTile.getHeader() + "\" was pressed.");
             },
 
+            handleIrrigationTilePressed : function(evt) {
+                this.getOwnerComponent().getRouter().getTargets().display("irrigation", {
+               fromTarget : "home"
+            });
+            },
+
             predict : function () {
                 var that = this;
                 var url = "http://mikmak.cc:1880/predictIrrigation";
@@ -45,8 +51,6 @@
                     success: function (result) {  
                         var sQuantity = result.Quantity;
                         var sTime = result.Time;
-
-                        var dMsg = oBundle.getText("doneMsg");
                         that.getView().getModel().setProperty("/result/state", "Loaded");
 
                         that.getView().getModel().setProperty("/result/time", sTime);

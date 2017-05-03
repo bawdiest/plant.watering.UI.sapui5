@@ -17,6 +17,23 @@ sap.ui.define([
 this.getRouter().initialize();
 
 
+// set data model
+var oData = {
+   input : {
+    temperature : 25,
+    irrigationTime: 0
+ },
+ result : {
+    message : "",
+    time : 0,
+    startIrrigationLinkText: "",
+    quantitiy : 0,
+    state : "Loaded"
+ }
+};
+var oModel = new JSONModel(oData);
+this.setModel(oModel);
+
 var url = "https://cors-anywhere.herokuapp.com/http://mikmak.cc:1880/weatherData?temperature=21";
 url += "&pressure=966";
 url += "&wind=1";
@@ -40,9 +57,9 @@ var testModel = new JSONModel();
       });
       this.setModel(i18nModel, "i18n");
 
-            var sPath = jQuery.sap.getModulePath("sap.ui.demo.wt", "/data/homeData.json");
-            var oModel = new JSONModel(sPath);
-            this.setModel(oModel, "tiles");
+      var sPath = jQuery.sap.getModulePath("sap.ui.demo.wt", "/data/homeData.json");
+      var oModel = new JSONModel(sPath);
+      this.setModel(oModel, "tiles");
 
       var oData = {
          data : {

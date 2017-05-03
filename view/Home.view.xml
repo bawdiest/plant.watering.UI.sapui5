@@ -8,7 +8,7 @@
   xmlns:mvc="sap.ui.core.mvc">
     <Page
     showHeader="true"
-    headerText="{i18n>inputPanelTitle}"
+    title="{i18n>homePageTitle}"
     enableScrolling="true" >
         <l:HorizontalLayout
       id="TileContainerExpanded"
@@ -16,14 +16,14 @@
       content="{tiles>/TileCollection}">
         <GenericTile 
           class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
-          header="{title}" 
-          subheader="{info}" 
+          header="{tiles>title}" 
+          subheader="{tiles>info}" 
           frameType="OneByOne"
           press="handleTilePressed">
           <tileContent>
-            <TileContent unit="{numberUnit}" footer="{infoState}">
+            <TileContent unit="{tiles>numberUnit}" footer="{tiles>infoState}">
             <content>
-              <NumericContent value="{number}" icon="{icon}"/>
+              <NumericContent value="{tiles>number}" icon="{tiles>icon}"/>
             </content>
           </TileContent>
         </tileContent>
@@ -56,7 +56,7 @@
           <tileContent>
             <TileContent unit="Duration in s" footer="">
             <content>
-              <NumericContent value="{/result/quantity}" icon="sap-icon://pending"/>
+              <NumericContent value="{/result/time}" icon="sap-icon://pending"/>
             </content>
           </TileContent>
         </tileContent>
