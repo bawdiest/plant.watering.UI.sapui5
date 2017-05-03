@@ -60,7 +60,7 @@
 			}],
 			"targets": {
 				"home": {
-					"viewName": "InputOutputPanel",
+					"viewName": "Home",
 					"viewLevel" : 1
 				},
 				"notFound": {
