@@ -8,21 +8,60 @@
   xmlns:mvc="sap.ui.core.mvc">
     <Page
     showHeader="true"
-    enableScrolling="false" >
-    <TileContainer
-      id="container"
-      tileDelete="handleTileDelete"
-      tiles="{/TileCollection}">
-      <StandardTile
-        icon="{icon}"
-        type="{type}"
-        number="{number}"
-        numberUnit="{numberUnit}"
-        title="{title}"
-        info="{info}"
-        infoState="{infoState}"
-        press="handleTilePressed" />
-    </TileContainer>
+    headerText="{i18n>inputPanelTitle}"
+    enableScrolling="true" >
+        <l:HorizontalLayout
+      id="TileContainerExpanded"
+      allowWrapping="true"
+      content="{tiles>/TileCollection}">
+        <GenericTile 
+          class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+          header="{title}" 
+          subheader="{info}" 
+          frameType="OneByOne"
+          press="handleTilePressed">
+          <tileContent>
+            <TileContent unit="{numberUnit}" footer="{infoState}">
+            <content>
+              <NumericContent value="{number}" icon="{icon}"/>
+            </content>
+          </TileContent>
+        </tileContent>
+  </GenericTile>
+</l:HorizontalLayout>
+        <l:HorizontalLayout
+      id="TileContainer"
+      allowWrapping="true">
+        <GenericTile 
+          class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+          header="Actual Weather" 
+          subheader="Weather from MeteoSuisse" 
+          frameType="OneByOne"
+          press="handleWeatherTilePressed">
+          <tileContent>
+            <TileContent unit="Temperature in C" footer="">
+            <content>
+              <NumericContent value="27" icon="sap-icon://weather-proofing"/>
+            </content>
+          </TileContent>
+        </tileContent>
+  </GenericTile>
+          <GenericTile 
+          class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+          header="Irrigation" 
+          subheader="Pump Controll" 
+          frameType="OneByOne"
+          state="{/result/state}"
+          press="handleIrrigationTilePressed">
+          <tileContent>
+            <TileContent unit="Duration in s" footer="">
+            <content>
+              <NumericContent value="{/result/quantity}" icon="sap-icon://pending"/>
+            </content>
+          </TileContent>
+        </tileContent>
+  </GenericTile>
+</l:HorizontalLayout>
     <footer>
       <Toolbar>
         <ToolbarSpacer/>
