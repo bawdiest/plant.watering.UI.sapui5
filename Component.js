@@ -34,6 +34,7 @@ var oData = {
 var oModel = new JSONModel(oData);
 this.setModel(oModel);
 
+/*
 var url = "https://cors-anywhere.herokuapp.com/http://mikmak.cc:1880/weatherData?temperature=21";
 url += "&pressure=966";
 url += "&wind=1";
@@ -49,7 +50,7 @@ var testModel = new JSONModel();
       oModel.loadData("data/predictiveModel.json");
 
       this.setModel(oModel, "model");
-
+*/
 
       // set i18n model
       var i18nModel = new ResourceModel({
