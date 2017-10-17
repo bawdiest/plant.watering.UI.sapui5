@@ -16,13 +16,13 @@
       <GenericTile 
         class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
         header="Actual Weather" 
-        subheader="Actual Weather from MeteoSuisse" 
+        subheader="Source: MeteoSuisse" 
         frameType="OneByOne"
         press="handleWeatherTilePressed">
         <tileContent>
           <TileContent unit="Temperature in C" footer="">
             <content>
-              <NumericContent value="{currentWeather>0/Temperature}" icon="sap-icon://weather-proofing"/>
+              <NumericContent value="{currentWeather>/0/Temperature}" icon="sap-icon://weather-proofing"/>
             </content>
           </TileContent>
         </tileContent>

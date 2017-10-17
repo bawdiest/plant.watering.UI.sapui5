@@ -33,10 +33,6 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/model/json/JSONModel", "sap/ui
             var weatherModel = new JSONModel();
             weatherModel.loadData(url, parameters, false, "GET", false, false, headers); //false: wait until data is loaded
             this.setModel(weatherModel, "currentWeather");
-            
-            var sPath = jQuery.sap.getModulePath("sap.ui.demo.wt", "/data/homeData.json");
-            var oModel = new JSONModel(sPath);
-            this.setModel(oModel, "tiles");
 
             var oData = {
                 data: {
