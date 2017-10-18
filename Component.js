@@ -31,7 +31,7 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/model/json/JSONModel", "sap/ui
             var parameters = {};
             var headers = {};
             var weatherModel = new JSONModel();
-            weatherModel.loadData(url, parameters, false, "GET", false, false, headers); //false: wait until data is loaded
+            weatherModel.loadData(url, parameters, true, "GET", false, false, headers); //false: wait until data is loaded
             this.setModel(weatherModel, "currentWeather");
 
             var oData = {
