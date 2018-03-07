@@ -1,0 +1,37 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="airigareairigareWeather.controller.Weather" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table noDataText="Drop column list items here and columns in the area above" id="__table0"
+						items="{ path: 'weatherData>/', groupHeaderFactory: '.createGroupHeader' }">
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{weatherData>Temperature}"/>
+									<Text text="{weatherData>Pressure}"/>
+									<Text text="{weatherData>Rain}"/>
+									<Text text="{weatherData>Sunshine}"/>
+									<Text text="{weatherData>Humidity}"/>
+									<Text text="{weatherData>Wind}"/>
+									<Text text="{weatherData>tmstp}"/>
+									
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column><header><Label text="Temperature"/></header></Column>
+							<Column><header><Label text="Pressure"/></header></Column>
+							<Column><header><Label text="Rain"/></header></Column>
+							<Column><header><Label text="Sunshine"/></header></Column>
+							<Column><header><Label text="Humidity"/></header></Column>
+							<Column><header><Label text="Wind"/></header></Column>
+							<Column><header><Label text="TimeStamp"/></header></Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
