@@ -1,4 +1,4 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="airigareairigareWeather.controller.Launchpad" displayBlock="true">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="airigare-app.controller.Launchpad" displayBlock="true">
 	<App id="App">
 		<pages>
 			<Page title="{i18n>title}">

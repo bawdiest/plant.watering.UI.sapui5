@@ -33,7 +33,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "airigareairigareWeather.view.Launchpad",
+			"viewName": "airigare-app.view.Launchpad",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -56,7 +56,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "airigareairigareWeather.i18n.i18n"
+					"bundleName": "airigare-app.i18n.i18n"
 				}
 			}
 		},
@@ -69,7 +69,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "airigareairigareWeather.view",
+				"viewPath": "airigare-app.view",
 				"controlId": "App",
 				"controlAggregation": "pages",
 				"transition": "slide",

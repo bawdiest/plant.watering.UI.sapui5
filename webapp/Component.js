@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"airigareairigareWeather/model/models"
+	"airigare-app/model/models"
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("airigareairigareWeather.Component", {
+	return UIComponent.extend("airigare-app.Component", {
 
 		metadata: {
 			manifest: "json"

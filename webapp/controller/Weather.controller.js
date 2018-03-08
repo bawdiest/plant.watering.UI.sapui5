@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(JSONModel, Controller) {
 	"use strict";
 
-	return Controller.extend("airigareairigareWeather.controller.Weather", {
+	return Controller.extend("airigare-app.controller.Weather", {
 
 		onInit: function() {
 			var that = this;
