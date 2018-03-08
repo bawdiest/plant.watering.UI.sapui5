@@ -9,6 +9,9 @@ sap.ui.define([
 		onInit: function() {
 			var that = this;
 
+		},
+		goToWeatherl24h: function() {
+			this.getOwnerComponent().getRouter().navTo("Weather");
 		}
 	});
 });
